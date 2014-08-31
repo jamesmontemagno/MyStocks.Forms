@@ -11,7 +11,7 @@ Xamarin.Forms example of querying stock quotes and using text to speech apis.
 * MVVM with Databinding to XAML UI
 * Custom fonts per platform
 
-## Screenthos
+## Screenshots
 ![](https://raw.githubusercontent.com/jamesmontemagno/MyStocks.Forms/master/Screenshots/MyStocksAndroid.png)![](https://raw.githubusercontent.com/jamesmontemagno/MyStocks.Forms/master/Screenshots/MyStocksiOS.png)![](https://raw.githubusercontent.com/jamesmontemagno/MyStocks.Forms/master/Screenshots/MyStocksWP.png)
 
 
