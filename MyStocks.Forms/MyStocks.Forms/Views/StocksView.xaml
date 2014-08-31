@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   x:Class="MyStocks.Forms.Views.StocksView"
+             Title="Stock Quotes"
+             BackgroundImage="background.png">
+  
+  <StackLayout Orientation="Vertical"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"
+               Padding="10,40,10,30"
+               Spacing="10">
+
+    <Label Text="Enter stock symbol:" Font="Small" TextColor="White"/>
+
+    <Entry Text="{Binding Symbol}"
+           Placeholder="Symbol"
+           HorizontalOptions="FillAndExpand"/>
+    
+    <Button Text="Get Quote"
+            Command ="{Binding GetQuoteCommand}"
+            BackgroundColor="#77D065"
+            TextColor="White"/>
+
+    <Label Text="{Binding Company}" Font="Medium" TextColor="White"/>
+    <Label Text="{Binding YearRange}" Font="Small" TextColor="White"/>
+
+    <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" Color="White"/>
+    
+    <Label Text="{Binding Quote}"
+           TextColor="{Binding QuoteColor}"
+           VerticalOptions="EndAndExpand"
+           HorizontalOptions="Center">
+      <Label.Font>
+        <OnPlatform x:TypeArguments="Font">
+          <OnPlatform.iOS>HelveticaNeue-Thin,35</OnPlatform.iOS>
+          <OnPlatform.Android>40</OnPlatform.Android>
+          <OnPlatform.WinPhone>50</OnPlatform.WinPhone>
+        </OnPlatform>
+      </Label.Font>
+    </Label>
+  </StackLayout>
+</ContentPage>
