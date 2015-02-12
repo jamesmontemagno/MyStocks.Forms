@@ -26,6 +26,8 @@ namespace MyStocks.Forms.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Refractored.Xam.TTS.Resource.String.ApplicationName = global::MyStocks.Forms.Droid.Resource.String.ApplicationName;
+			global::Refractored.Xam.TTS.Resource.String.Hello = global::MyStocks.Forms.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
@@ -56,6 +58,25 @@ namespace MyStocks.Forms.Droid
 			}
 			
 			private Drawable()
+			{
+			}
+		}
+		
+		public partial class String
+		{
+			
+			// aapt resource value: 0x7f030001
+			public const int ApplicationName = 2130903041;
+			
+			// aapt resource value: 0x7f030000
+			public const int Hello = 2130903040;
+			
+			static String()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private String()
 			{
 			}
 		}

@@ -15,17 +15,26 @@
 
     <Entry Text="{Binding Symbol}"
            Placeholder="Symbol"
-           HorizontalOptions="FillAndExpand"/>
+           HorizontalOptions="FillAndExpand"
+           x:Name="Ticker"/>
     
     <Button Text="Get Quote"
             Command ="{Binding GetQuoteCommand}"
             BackgroundColor="#77D065"
             TextColor="White"/>
 
+
+    <Button x:Name="TweetButton" 
+            Text="Tweets" 
+            TextColor="White"/>
+
+
     <Label Text="{Binding Company}" Font="Medium" TextColor="White"/>
     <Label Text="{Binding YearRange}" Font="Small" TextColor="White"/>
 
-    <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" Color="White"/>
+    <ActivityIndicator IsRunning="{Binding IsBusy}" 
+                       IsVisible="{Binding IsBusy}" 
+                       Color="White"/>
     
     <Label Text="{Binding Quote}"
            TextColor="{Binding QuoteColor}"
@@ -39,5 +48,5 @@
         </OnPlatform>
       </Label.Font>
     </Label>
-  </StackLayout>
+   </StackLayout>
 </ContentPage>

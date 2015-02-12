@@ -12,7 +12,7 @@ using Xamarin.Forms.Platform.Android;
 namespace MyStocks.Forms.Droid
 {
   [Activity(Label = "My Stocks", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-  public class MainActivity : AndroidActivity
+  public class MainActivity : FormsApplicationActivity
   {
     protected override void OnCreate(Bundle bundle)
     {
@@ -20,7 +20,7 @@ namespace MyStocks.Forms.Droid
 
       Xamarin.Forms.Forms.Init(this, bundle);
 
-      SetPage(App.GetMainPage());
+      LoadApplication(new App());
     }
   }
 }

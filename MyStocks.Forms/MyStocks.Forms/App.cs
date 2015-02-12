@@ -7,11 +7,28 @@ using Xamarin.Forms;
 
 namespace MyStocks.Forms
 {
-  public class App
+  public class App : Application
   {
-    public static Page GetMainPage()
+    public App()
     {
-      return new StocksView();
+      MainPage = new NavigationPage(new StocksView());
     }
+
+    protected override void OnSleep()
+    {
+      base.OnSleep();
+    }
+
+    protected override void OnStart()
+    {
+      base.OnStart();
+    }
+
+    protected override void OnResume()
+    {
+      base.OnResume();
+    }
+
+
   }
 }

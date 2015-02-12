@@ -9,18 +9,19 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Platform.WinPhone;
 
 
 namespace MyStocks.Forms.WinPhone
 {
-  public partial class MainPage : PhoneApplicationPage
+  public partial class MainPage : FormsApplicationPage
   {
     public MainPage()
     {
       InitializeComponent();
 
       Xamarin.Forms.Forms.Init();
-      Content = MyStocks.Forms.App.GetMainPage().ConvertPageToUIElement(this);
+      LoadApplication(new MyStocks.Forms.App());
     }
   }
 }

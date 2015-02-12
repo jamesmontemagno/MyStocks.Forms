@@ -7,21 +7,21 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using MyStocks.Forms.Interfaces;
+using Refractored.Xam.TTS;
 
 
 namespace MyStocks.Forms.ViewModels
 {
-  public class StockViewModel : INotifyPropertyChanged
+  public class StockViewModel : BaseViewModel
   {
-    #region Binable Properties
+    #region Bindable Properties
     private Color Green = Color.FromHex("77D065");
 
     private string quoteDisplay = string.Empty;
     public string Quote
     {
       get { return quoteDisplay; }
-      set { quoteDisplay = value; OnPropertyChanged("Quote"); }
+      set { SetProperty(ref quoteDisplay, value, "Quote"); }
     }
 
 
@@ -29,7 +29,7 @@ namespace MyStocks.Forms.ViewModels
     public string Company
     {
       get { return company; }
-      set { company = value; OnPropertyChanged("Company"); }
+      set { SetProperty(ref company, value, "Company"); }
     }
 
 
@@ -37,28 +37,21 @@ namespace MyStocks.Forms.ViewModels
     public string YearRange
     {
       get { return yearRange; }
-      set { yearRange = value; OnPropertyChanged("YearRange"); }
+      set { SetProperty(ref yearRange, value, "YearRange"); }
     }
 
     private string symbol = "MSFT";
     public string Symbol
     {
       get { return symbol; }
-      set { symbol = value; OnPropertyChanged("Symbol"); }
-    }
-
-    private bool isBusy;
-    public bool IsBusy
-    {
-      get { return isBusy; }
-      set { isBusy = value; OnPropertyChanged("IsBusy"); }
+      set { SetProperty(ref symbol, value, "Symbol"); }
     }
 
     private Color quoteColor;
     public Color QuoteColor
     {
       get { return quoteColor; }
-      set { quoteColor = value; OnPropertyChanged("QuoteColor"); }
+      set { SetProperty(ref quoteColor, value, "QuoteColor"); }
     }
     #endregion
 
@@ -103,8 +96,8 @@ namespace MyStocks.Forms.ViewModels
 
         var toSpeak = "Today " + Company + " is " + (quote.StockIsUp ? "up " : "down ") +
                        quote.Change + " and is currently at $" + quote.CurrentQuote;
-        
-        DependencyService.Get<ITextToSpeech>().Speak(toSpeak);
+
+        CrossTextToSpeech.Current.Speak(toSpeak, speakRate: Device.OnPlatform(.25f, 1.0f, 1.0f));
       }
       catch (Exception ex)
       {
