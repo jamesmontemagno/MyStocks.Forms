@@ -1,7 +1,7 @@
 MyStocks.Forms
 ==============
 
-Xamarin.Forms example of querying stock quotes and using text to speech apis.
+Xamarin.Forms example of querying stock quotes, twitter, and using text to speech apis.
 
 
 ## Features
@@ -9,7 +9,9 @@ Xamarin.Forms example of querying stock quotes and using text to speech apis.
 * Text To Speech APIs
 * Query Yahoo APIs for stock quotes
 * MVVM with Databinding to XAML UI
+* Navigation and hiding of navigation bar on select pages
 * Custom fonts per platform
+* Use of Linq2Twitter to query tweets
 
 ## Screenshots
 ![](https://raw.githubusercontent.com/jamesmontemagno/MyStocks.Forms/master/Screenshots/MyStocksAndroid.png)![](https://raw.githubusercontent.com/jamesmontemagno/MyStocks.Forms/master/Screenshots/MyStocksiOS.png)![](https://raw.githubusercontent.com/jamesmontemagno/MyStocks.Forms/master/Screenshots/MyStocksWP.png)
