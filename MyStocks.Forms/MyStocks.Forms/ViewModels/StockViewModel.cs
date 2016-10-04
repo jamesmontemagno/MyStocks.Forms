@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+// Text To Speech doesn't seem to be working right now
 //using Refractored.Xam.TTS;
 
 
@@ -97,7 +98,8 @@ namespace MyStocks.Forms.ViewModels
         var toSpeak = "Today " + Company + " is " + (quote.StockIsUp ? "up " : "down ") +
                        quote.Change + " and is currently at $" + quote.CurrentQuote;
 
-//                Refractored.Xam.TTS.CrossTextToSpeech.Current.Speak(toSpeak, speakRate: Device.OnPlatform(.25f, 1.0f, 1.0f));
+// TODO: Fix text to speech reference problem
+//        CrossTextToSpeech.Current.Speak(toSpeak, speakRate: Device.OnPlatform(.25f, 1.0f, 1.0f));
       }
       catch (Exception ex)
       {

@@ -40,7 +40,7 @@
     <MtouchUseRefCounting>False</MtouchUseRefCounting>
     <MtouchOptimizePNGs>True</MtouchOptimizePNGs>
     <MtouchI18n />
-<CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -166,6 +166,12 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="TextToSpeechPlugin">
+      <Visible>False</Visible>
+      <Version>1.0.2</Version>
+    </XamarinComponentReference>
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
