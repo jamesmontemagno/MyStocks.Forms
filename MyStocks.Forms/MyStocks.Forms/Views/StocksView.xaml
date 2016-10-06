@@ -42,7 +42,7 @@
         <OnPlatform x:TypeArguments="Font">
           <OnPlatform.iOS>HelveticaNeue-Thin,35</OnPlatform.iOS>
           <OnPlatform.Android>40</OnPlatform.Android>
-          <OnPlatform.UWP>50</OnPlatform.UWP>
+          <OnPlatform.WinPhone>50</OnPlatform.WinPhone>
         </OnPlatform>
       </Label.Font>
     </Label>
