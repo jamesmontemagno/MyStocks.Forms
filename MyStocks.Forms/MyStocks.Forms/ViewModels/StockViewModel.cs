@@ -7,7 +7,8 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using Refractored.Xam.TTS;
+// Text To Speech doesn't seem to be working right now
+//using Refractored.Xam.TTS;
 
 
 namespace MyStocks.Forms.ViewModels
@@ -97,7 +98,8 @@ namespace MyStocks.Forms.ViewModels
         var toSpeak = "Today " + Company + " is " + (quote.StockIsUp ? "up " : "down ") +
                        quote.Change + " and is currently at $" + quote.CurrentQuote;
 
-        CrossTextToSpeech.Current.Speak(toSpeak, speakRate: Device.OnPlatform(.25f, 1.0f, 1.0f));
+// TODO: Fix text to speech reference problem
+//        CrossTextToSpeech.Current.Speak(toSpeak, speakRate: Device.OnPlatform(.25f, 1.0f, 1.0f));
       }
       catch (Exception ex)
       {
@@ -111,8 +113,8 @@ namespace MyStocks.Forms.ViewModels
       }
     }
 
-    public event PropertyChangedEventHandler PropertyChanged;
-    private void OnPropertyChanged(string propertyName)
+    public new event PropertyChangedEventHandler PropertyChanged;
+    private new void OnPropertyChanged(string propertyName)
     {
       if (PropertyChanged == null)
         return;

@@ -23,11 +23,9 @@
             BackgroundColor="#77D065"
             TextColor="White"/>
 
-
     <Button x:Name="TweetButton" 
             Text="Tweets" 
             TextColor="White"/>
-
 
     <Label Text="{Binding Company}" Font="Medium" TextColor="White"/>
     <Label Text="{Binding YearRange}" Font="Small" TextColor="White"/>
@@ -44,7 +42,7 @@
         <OnPlatform x:TypeArguments="Font">
           <OnPlatform.iOS>HelveticaNeue-Thin,35</OnPlatform.iOS>
           <OnPlatform.Android>40</OnPlatform.Android>
-          <OnPlatform.WinPhone>50</OnPlatform.WinPhone>
+          <OnPlatform.UWP>50</OnPlatform.UWP>
         </OnPlatform>
       </Label.Font>
     </Label>

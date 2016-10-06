@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{40D9DBDD-16E7-4BFD-88B7-4645FFFC8389}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyStocks.Forms/MyStocks.Forms/Views/StocksView.xaml.cs">
+    <Files>
+      <File FileName="MyStocks.Forms/MyStocks.Forms.iOS/Main.cs" Line="21" Column="1" />
+      <File FileName="MyStocks.Forms/MyStocks.Forms.iOS/AppDelegate.cs" Line="14" Column="46" />
+      <File FileName="MyStocks.Forms/MyStocks.Forms/App.cs" Line="12" Column="12" />
+      <File FileName="MyStocks.Forms/MyStocks.Forms/Views/TweetsView.xaml.cs" Line="42" Column="1" />
+      <File FileName="MyStocks.Forms/MyStocks.Forms/ViewModels/TwitterViewModel.cs" Line="42" Column="1" />
+      <File FileName="MyStocks.Forms/MyStocks.Forms.Android/MainActivity.cs" Line="21" Column="1" />
+      <File FileName="MyStocks.Forms/MyStocks.Forms/Views/StocksView.xaml.cs" Line="15" Column="12" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|Android-Any CPU" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/SOURCE/Github/MyStocks.Forms/MyStocks.Forms/MyStocks.Forms/Views/TweetsView.xaml.cs" line="16" column="14" />
+      <Breakpoint file="/Volumes/SOURCE/Github/MyStocks.Forms/MyStocks.Forms/MyStocks.Forms.Android/MainActivity.cs" line="21" column="1" />
+      <Breakpoint file="/Volumes/SOURCE/Github/MyStocks.Forms/MyStocks.Forms/MyStocks.Forms/Views/StocksView.xaml.cs" line="15" column="12" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MyStocks.Forms.Android PreferredExecutionTarget="Android.Xamarin_Android_API_23" />
+  <MonoDevelop.Ide.ItemProperties.MyStocks.Forms.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3AEA47F6-B86B-409B-A7DA-3840BEC50D66" />
+</Properties>

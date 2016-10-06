@@ -75,6 +75,10 @@ namespace MyStocks.Forms.ViewModels
       }
       catch (Exception ex)
       {
+#if DEBUG
+                System.Diagnostics.Debugger.Break();
+#endif
+                System.Diagnostics.Debug.WriteLine("Exception: {0}", ex.ToString());
       }
 
       IsBusy = false;
