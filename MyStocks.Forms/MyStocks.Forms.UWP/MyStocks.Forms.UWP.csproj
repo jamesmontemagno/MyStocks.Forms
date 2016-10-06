@@ -129,7 +129,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyStocks.Forms\MyStocks.Forms\MyStocks.Forms.csproj">
+    <ProjectReference Include="..\MyStocks.Forms\MyStocks.Forms.csproj">
       <Project>{5054bacb-1106-4e32-8a6f-5957b11bcd70}</Project>
       <Name>MyStocks.Forms</Name>
     </ProjectReference>
