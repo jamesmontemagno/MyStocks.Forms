@@ -3,8 +3,12 @@
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
-      "linqtotwitter/4.1.0": {
+      "linqtotwitter/3.1.2": {
         "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14",
+          "Microsoft.Bcl.Compression": "3.9.85",
+          "Microsoft.Net.Http": "2.2.28",
           "Rx-Core": "2.2.5",
           "Rx-Interfaces": "2.2.5",
           "Rx-Linq": "2.2.5",
@@ -12,10 +16,12 @@
           "Rx-PlatformServices": "2.2.5"
         },
         "compile": {
-          "lib/uap10.0/LinqToTwitter.uap10.dll": {}
+          "lib/win8/LinqToTwitter.WindowsStore.dll": {},
+          "lib/win8/LinqToTwitterPcl.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/LinqToTwitter.uap10.dll": {}
+          "lib/win8/LinqToTwitter.WindowsStore.dll": {},
+          "lib/win8/LinqToTwitterPcl.dll": {}
         }
       },
       "Microsoft.Bcl/1.1.10": {
@@ -1915,8 +1921,12 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
-      "linqtotwitter/4.1.0": {
+      "linqtotwitter/3.1.2": {
         "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14",
+          "Microsoft.Bcl.Compression": "3.9.85",
+          "Microsoft.Net.Http": "2.2.28",
           "Rx-Core": "2.2.5",
           "Rx-Interfaces": "2.2.5",
           "Rx-Linq": "2.2.5",
@@ -1924,10 +1934,12 @@
           "Rx-PlatformServices": "2.2.5"
         },
         "compile": {
-          "lib/uap10.0/LinqToTwitter.uap10.dll": {}
+          "lib/win8/LinqToTwitter.WindowsStore.dll": {},
+          "lib/win8/LinqToTwitterPcl.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/LinqToTwitter.uap10.dll": {}
+          "lib/win8/LinqToTwitter.WindowsStore.dll": {},
+          "lib/win8/LinqToTwitterPcl.dll": {}
         }
       },
       "Microsoft.Bcl/1.1.10": {
@@ -3688,8 +3700,12 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
-      "linqtotwitter/4.1.0": {
+      "linqtotwitter/3.1.2": {
         "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14",
+          "Microsoft.Bcl.Compression": "3.9.85",
+          "Microsoft.Net.Http": "2.2.28",
           "Rx-Core": "2.2.5",
           "Rx-Interfaces": "2.2.5",
           "Rx-Linq": "2.2.5",
@@ -3697,10 +3713,12 @@
           "Rx-PlatformServices": "2.2.5"
         },
         "compile": {
-          "lib/uap10.0/LinqToTwitter.uap10.dll": {}
+          "lib/win8/LinqToTwitter.WindowsStore.dll": {},
+          "lib/win8/LinqToTwitterPcl.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/LinqToTwitter.uap10.dll": {}
+          "lib/win8/LinqToTwitter.WindowsStore.dll": {},
+          "lib/win8/LinqToTwitterPcl.dll": {}
         }
       },
       "Microsoft.Bcl/1.1.10": {
@@ -5419,8 +5437,12 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
-      "linqtotwitter/4.1.0": {
+      "linqtotwitter/3.1.2": {
         "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14",
+          "Microsoft.Bcl.Compression": "3.9.85",
+          "Microsoft.Net.Http": "2.2.28",
           "Rx-Core": "2.2.5",
           "Rx-Interfaces": "2.2.5",
           "Rx-Linq": "2.2.5",
@@ -5428,10 +5450,12 @@
           "Rx-PlatformServices": "2.2.5"
         },
         "compile": {
-          "lib/uap10.0/LinqToTwitter.uap10.dll": {}
+          "lib/win8/LinqToTwitter.WindowsStore.dll": {},
+          "lib/win8/LinqToTwitterPcl.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/LinqToTwitter.uap10.dll": {}
+          "lib/win8/LinqToTwitter.WindowsStore.dll": {},
+          "lib/win8/LinqToTwitterPcl.dll": {}
         }
       },
       "Microsoft.Bcl/1.1.10": {
@@ -7200,8 +7224,12 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
-      "linqtotwitter/4.1.0": {
+      "linqtotwitter/3.1.2": {
         "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14",
+          "Microsoft.Bcl.Compression": "3.9.85",
+          "Microsoft.Net.Http": "2.2.28",
           "Rx-Core": "2.2.5",
           "Rx-Interfaces": "2.2.5",
           "Rx-Linq": "2.2.5",
@@ -7209,10 +7237,12 @@
           "Rx-PlatformServices": "2.2.5"
         },
         "compile": {
-          "lib/uap10.0/LinqToTwitter.uap10.dll": {}
+          "lib/win8/LinqToTwitter.WindowsStore.dll": {},
+          "lib/win8/LinqToTwitterPcl.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/LinqToTwitter.uap10.dll": {}
+          "lib/win8/LinqToTwitter.WindowsStore.dll": {},
+          "lib/win8/LinqToTwitterPcl.dll": {}
         }
       },
       "Microsoft.Bcl/1.1.10": {
@@ -8931,8 +8961,12 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
-      "linqtotwitter/4.1.0": {
+      "linqtotwitter/3.1.2": {
         "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14",
+          "Microsoft.Bcl.Compression": "3.9.85",
+          "Microsoft.Net.Http": "2.2.28",
           "Rx-Core": "2.2.5",
           "Rx-Interfaces": "2.2.5",
           "Rx-Linq": "2.2.5",
@@ -8940,10 +8974,12 @@
           "Rx-PlatformServices": "2.2.5"
         },
         "compile": {
-          "lib/uap10.0/LinqToTwitter.uap10.dll": {}
+          "lib/win8/LinqToTwitter.WindowsStore.dll": {},
+          "lib/win8/LinqToTwitterPcl.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/LinqToTwitter.uap10.dll": {}
+          "lib/win8/LinqToTwitter.WindowsStore.dll": {},
+          "lib/win8/LinqToTwitterPcl.dll": {}
         }
       },
       "Microsoft.Bcl/1.1.10": {
@@ -10712,8 +10748,12 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
-      "linqtotwitter/4.1.0": {
+      "linqtotwitter/3.1.2": {
         "dependencies": {
+          "Microsoft.Bcl": "1.1.9",
+          "Microsoft.Bcl.Build": "1.0.14",
+          "Microsoft.Bcl.Compression": "3.9.85",
+          "Microsoft.Net.Http": "2.2.28",
           "Rx-Core": "2.2.5",
           "Rx-Interfaces": "2.2.5",
           "Rx-Linq": "2.2.5",
@@ -10721,10 +10761,12 @@
           "Rx-PlatformServices": "2.2.5"
         },
         "compile": {
-          "lib/uap10.0/LinqToTwitter.uap10.dll": {}
+          "lib/win8/LinqToTwitter.WindowsStore.dll": {},
+          "lib/win8/LinqToTwitterPcl.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/LinqToTwitter.uap10.dll": {}
+          "lib/win8/LinqToTwitter.WindowsStore.dll": {},
+          "lib/win8/LinqToTwitterPcl.dll": {}
         }
       },
       "Microsoft.Bcl/1.1.10": {
@@ -12444,20 +12486,19 @@
     }
   },
   "libraries": {
-    "linqtotwitter/4.1.0": {
-      "sha512": "AvmlI+moHkAav35oWiwWcqlmH+g/xWpaVy9jeL50LLy4r2Z+VkO3fdyV90bBHFpkJENBqDtLRyTv0X3/Pd09Ew==",
+    "linqtotwitter/3.1.2": {
+      "sha512": "fLZHnaClBuxxjICR+Dn/2uDmOEPxKnvSq886hc+Vm1y8Gx+k04XNxsk2JH7+kWO8EipjNL7kFGHXMoadkNShfw==",
       "type": "package",
       "files": [
-        "lib/monoandroid/LinqToTwitter.xamarin.dll",
-        "lib/monotouch/LinqToTwitter.xamarin.dll",
+        "LinqToTwitter.3.1.2.nupkg.sha512",
+        "LinqToTwitter.nuspec",
         "lib/net45/LinqToTwitter.AspNet.dll",
-        "lib/net45/LinqToTwitter.net.dll",
-        "lib/portable-net45+win+wpa81/LinqToTwitter.xamarin.dll",
-        "lib/portable-win8+net45+wp8/LinqToTwitter.xamarin.dll",
-        "lib/uap10.0/LinqToTwitter.uap10.dll",
-        "lib/xamarin.ios/LinqToTwitter.xamarin.dll",
-        "linqtotwitter.4.1.0.nupkg.sha512",
-        "linqtotwitter.nuspec"
+        "lib/net45/LinqToTwitterPcl.dll",
+        "lib/portable-win8+net45+wp8/LinqToTwitterPcl.dll",
+        "lib/win8/LinqToTwitter.WindowsStore.dll",
+        "lib/win8/LinqToTwitterPcl.dll",
+        "lib/wp8/LinqToTwitterPcl.dll",
+        "lib/wpa/LinqToTwitterPcl.dll"
       ]
     },
     "Microsoft.Bcl/1.1.10": {
@@ -16326,7 +16367,7 @@
       "Newtonsoft.Json >= 9.0.1",
       "Xam.Plugins.TextToSpeech >= 2.0.0",
       "Xamarin.Forms >= 2.3.2.127",
-      "linqtotwitter >= 4.1.0"
+      "linqtotwitter >= 3.1.2"
     ],
     "UAP,Version=v10.0": []
   }
