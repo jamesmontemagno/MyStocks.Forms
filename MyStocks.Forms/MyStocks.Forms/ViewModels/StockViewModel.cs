@@ -63,7 +63,7 @@ namespace MyStocks.Forms.ViewModels
     /// </summary>
     public Command GetQuoteCommand
     {
-      get { return getQuoteCommand ?? (getQuoteCommand = new Command(() => GetQuote())); }
+      get { return getQuoteCommand ?? (getQuoteCommand = new Command(async () => await GetQuote())); }
     }
 
     private async Task GetQuote()
@@ -97,10 +97,9 @@ namespace MyStocks.Forms.ViewModels
         var toSpeak = "Today " + Company + " is " + (quote.StockIsUp ? "up " : "down ") +
                        quote.Change + " and is currently at $" + quote.CurrentQuote;
 
-// TODO: Fix text to speech reference problem
         CrossTextToSpeech.Current.Speak(toSpeak, speakRate: Device.OnPlatform(.25f, 1.0f, 1.0f));
       }
-      catch (Exception ex)
+      catch (Exception)
       {
         Quote = "Invalid";
         QuoteColor = Color.Yellow;
